@@ -1,0 +1,1 @@
+writebackup.vba: call delete('d:/Editor/Vim/vimfiles/bundle/writebackup//autoload/escapings.vim')|call delete('d:/Editor/Vim/vimfiles/bundle/writebackup//autoload/writebackup.vim')|call delete('d:/Editor/Vim/vimfiles/bundle/writebackup//plugin/writebackup.vim')|call delete('d:/Editor/Vim/vimfiles/bundle/writebackup//doc/writebackup.txt')
