@@ -66,18 +66,18 @@ if	s:MSWIN
 	if match( s:sourced_script_file, escape( s:vimfiles, ' \' ) ) == 0
 		" system wide installation
 		let s:installation					= 'system'
-		let s:plugin_dir						= $VIM.'/vimfiles/'
-		let s:C_GlobalTemplateDir		= s:plugin_dir.'c-support/templates'
-		let s:C_GlobalTemplateFile  = s:C_GlobalTemplateDir.'/Templates'
+		let s:plugin_dir						= $VIM.'\vimfiles\bundle\cvim\'
+		let s:C_GlobalTemplateDir		= s:plugin_dir.'c-support\templates'
+		let s:C_GlobalTemplateFile  = s:C_GlobalTemplateDir.'\Templates'
 	else
 		" user installation assumed
-		let s:plugin_dir  					= $HOME.'/vimfiles/'
+		let s:plugin_dir  					= $VIM.'\vimfiles\'
 	endif
 	"
-	let s:C_LocalTemplateFile     = $HOME.'/vimfiles/c-support/templates/Templates'
-	let s:C_LocalTemplateDir      = fnamemodify( s:C_LocalTemplateFile, ":p:h" ).'/'
-	let s:C_CodeSnippets  				= $HOME.'/vimfiles/c-support/codesnippets/'
-	let s:C_IndentErrorLog				= $HOME.'/_indent.errorlog'
+	let s:C_LocalTemplateFile     = $VIM.'\vimfiles\bundle\cvim\c-support\templates\Templates'
+	let s:C_LocalTemplateDir      = fnamemodify( s:C_LocalTemplateFile, ":p:h" ).'\'
+	let s:C_CodeSnippets  				= $VIM.'\vimfiles\bundle\cvimc-support\codesnippets\'
+	let s:C_IndentErrorLog				= $VIM.'\_indent.errorlog'
 	"
   let s:escfilename 	= ''
 	let s:C_Display     = ''
