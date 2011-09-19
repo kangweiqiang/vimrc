@@ -55,13 +55,15 @@ if has("gui_running")	" GUI color and font settings
    set gfn=Bitstream_Vera_Sans_Mono:h11:cANSI
    set gfw=Yahei_Mono:h10:cGB2312
   set background=dark 
-  set t_Co=256          " 256 color mode
+  "set background=light
+  "set t_Co=256          " 256 color mode
   set cursorline        " highlight current line
   "colors moria
   "colorscheme molokai
+  "let g:molokai_original = 1
   "colorscheme lilypink
-  colorscheme mrpink
-  let g:molokai_original = 1
+  "colorscheme mrpink
+  colorscheme solarized
 else
 " terminal color settings
   colors vgod
@@ -441,3 +443,4 @@ nmap <silent> <leader>hh <Plug>MarkClear
 vmap <silent> <leader>hh <Plug>MarkClear
 nmap <silent> <leader>hr <Plug>MarkRegex
 vmap <silent> <leader>hr <Plug>MarkRegex
+
